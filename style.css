@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+  --Green: hsl(75, 94%, 57%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: var(--Off-Black); */
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.profile-card {
+  background-color: var(--Dark-Grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 0px 30px;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 15px 10px #48abe0;
+}
+
+.profile-info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.profile-picture {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.profile-picture:hover {
+  cursor: pointer;
+}
+
+.user-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: var(--White);
+  margin-top: 25px;
+}
+
+.user-location {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: var(--Green);
+  margin-top: 10px;
+}
+
+.user-profession {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--White);
+  opacity: 0.8;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-media-btn {
+  padding: 10px 80px;
+  border-style: none;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  background-color: var(--Grey);
+  color: var(--White);
+  transition: 0.1s;
+}
+
+.social-media-btn:hover {
+  background-color: var(--Green);
+  cursor: pointer;
+  transform: scale(1.05);
+  color: var(--Grey);
+}
+
+.attribution {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--White);
+  margin-top: 30px;
+}
+
+.footer-text {
+  text-decoration: none;
+  color: var(--Green);
+}
